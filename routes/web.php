@@ -27,7 +27,7 @@ Route::get('{page?}', function($page = "")
             return "return fetchData endpoint";
         else:
             // return view('index', compact('page'));
-            return "return demo page";
+            return "return normal page";
         endif;
 
     else:
