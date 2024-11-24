@@ -10,9 +10,18 @@
         "production": "mix --production"
     },
     "devDependencies": {
-        "axios": "^0.21",
+        "@babel/preset-react": "^7.13.13",
+        "@popperjs/core": "^2.10.2",
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.7.7",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "postcss": "^8.4.49",
+        "tailwindcss": "^3.4.15"
+    },
+    "dependencies": {
+        "@types/react": "^18.3.12",
+        "@types/react-dom": "^18.3.1",
+        "react-router-dom": "^7.0.1"
     }
 }
