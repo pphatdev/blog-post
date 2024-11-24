@@ -1,10 +1,10 @@
+import React from "react"
 import { Keyboard, Settings, User, } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger, } from "@/components/ui/dropdown-menu"
-import React from "react"
 import { Avatar, AvatarFallback, AvatarImage } from '@components/ui/avatar';
 import { PiSignOut } from "react-icons/pi"
 
-export function AdminHeaderProfile() {
+export const AdminHeaderProfile = () => {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>

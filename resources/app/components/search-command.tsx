@@ -1,7 +1,7 @@
 import React from "react"
 import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@components/ui/command"
 
-export function SearchCommand() {
+export const SearchCommand = () => {
     const [open, setOpen] = React.useState(false)
 
     React.useEffect(() => {

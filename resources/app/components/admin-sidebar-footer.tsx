@@ -34,7 +34,7 @@ const frameworks = [
     },
 ]
 
-export function AdminSidebarFooter() {
+export const AdminSidebarFooter = () => {
     const [open, setOpen] = React.useState(false)
     const [value, setValue] = React.useState("")
 

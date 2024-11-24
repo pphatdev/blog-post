@@ -1,5 +1,3 @@
-"use client"
-
 import * as React from "react"
 import { Check, ChevronsUpDown } from "lucide-react"
 
@@ -42,7 +40,7 @@ const frameworks = [
     },
 ]
 
-export function ComboboxDemo() {
+export const Combobox = () => {
     const [open, setOpen] = React.useState(false)
     const [value, setValue] = React.useState("")
 

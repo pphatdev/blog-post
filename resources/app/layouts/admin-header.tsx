@@ -1,7 +1,7 @@
+import React from 'react';
 import { SearchCommand } from '@/components/search-command';
 import { SidebarTrigger } from '@/components/ui/sidebar';
 import { Notifications } from '@/components/notifications';
-import React from 'react';
 import { AdminHeaderProfile } from '@/components/admin-header-profile';
 
 

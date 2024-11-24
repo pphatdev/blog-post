@@ -1,9 +1,9 @@
+import React from "react"
 import { BellIcon, User, } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuTrigger, } from "@/components/ui/dropdown-menu"
-import React from "react"
 
-export function Notifications() {
+export const Notifications = () => {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
