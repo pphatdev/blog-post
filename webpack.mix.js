@@ -12,10 +12,11 @@ const path = require('path');
 |
 */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.ts('resources/js/app.ts', 'public/ts')
     .postCss('resources/css/app.css', 'public/css', [
         require('tailwindcss'),
     ])
+    .react()
     .webpackConfig({
         resolve: {
             alias: {
@@ -27,6 +28,7 @@ mix.js('resources/js/app.js', 'public/js')
                 '@routes': path.resolve('resources/app/routes'),
                 '@demo': path.resolve('resources/js'),
             },
+            extensions: ['.ts', '.tsx', '.js', '.jsx'],
             fallback: {
                 "fs": false
             },
