@@ -9,8 +9,8 @@ export const AdminHeaderProfile = () => {
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
                 <Avatar className="w-8 h-8 cursor-pointer">
-                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                    <AvatarFallback>CN</AvatarFallback>
+                    <AvatarImage src="https://github.com/pphatdev.png" alt="@pphatdev" />
+                    <AvatarFallback>PP</AvatarFallback>
                 </Avatar>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56" align="end">

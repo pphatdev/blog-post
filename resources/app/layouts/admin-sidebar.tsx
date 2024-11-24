@@ -1,6 +1,6 @@
 import React from "react"
-import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuBadge, SidebarMenuButton, SidebarMenuItem, SidebarMenuSkeleton, SidebarMenuSub, SidebarMenuSubButton, SidebarMenuSubItem, SidebarTrigger, } from "@/components/ui/sidebar"
-import { Calendar, ChevronRight, ChevronUp, Cog, CopyIcon, EllipsisVerticalIcon, Home, Inbox, PencilIcon, Plus, Search, Settings, TrashIcon, User2 } from "lucide-react"
+import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu,  SidebarMenuButton, SidebarMenuItem, SidebarMenuSkeleton, SidebarMenuSub, SidebarMenuSubButton, SidebarMenuSubItem, } from "@/components/ui/sidebar"
+import { Calendar, ChartColumn, ChevronRight, CopyIcon, EllipsisVerticalIcon,  Inbox, PencilIcon, Plus,  TrashIcon, } from "lucide-react"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { IconFrame } from "@/components/utils/icon-frame"
@@ -9,6 +9,7 @@ import { Link } from "react-router-dom"
 import { Avatar, AvatarFallback, AvatarImage } from "@components/ui/avatar"
 import { Skeleton } from "@components/ui/skeleton"
 import { AdminSidebarFooter } from '@components/admin-sidebar-footer';
+import { PiUserSound } from "react-icons/pi"
 
 
 const HeaderSidebar = () => {
@@ -46,23 +47,16 @@ const LoadingSidebar = () => {
 const ContentSidebar = () => {
     const items = [
         {
-            title: "Home",
+            title: "Dashboard",
             url: "#",
-            icon: Home,
-            children: [
-                {
-                    title: "Dashboard",
-                    url: "#",
-                },
-                {
-                    title: "Analytics",
-                    url: "#",
-                },
-                {
-                    title: "Reports",
-                    url: "#",
-                },
-            ]
+            icon: ChartColumn,
+            children: []
+        },
+        {
+            title: "Blog",
+            url: "#",
+            icon: PiUserSound,
+            children: []
         },
         {
             title: "Inbox",
@@ -74,18 +68,6 @@ const ContentSidebar = () => {
             title: "Calendar",
             url: "#",
             icon: Calendar,
-            children: []
-        },
-        {
-            title: "Search",
-            url: "#",
-            icon: Search,
-            children: []
-        },
-        {
-            title: "Settings",
-            url: "#",
-            icon: Settings,
             children: []
         },
     ]
