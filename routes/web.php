@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::pattern('page', '[a-zA-Z0-9-/]+');
+Route::get('{page?}', function($page = "")
+{
+    // If the route is not for demo
+    if (!preg_match("/demo/i", $page)):
+
+        if (preg_match("/fetch/i", $page)):
+            // return (new Data)->fetchData();
+
+            return "return fetchData endpoint";
+        else:
+            // return view('index', compact('page'));
+            return "return demo page";
+        endif;
+
+    else:
+        $componentsView = str_replace('/', '.', $page);
+
+        // if current route is can demo
+        if (View::exists($componentsView)):
+            return view($componentsView);
+        else :
+            return view('error', ['title' => 'Not Found Page']);
+        endif;
+    endif;
 });
