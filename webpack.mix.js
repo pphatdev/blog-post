@@ -29,6 +29,7 @@ mix.ts('resources/js/app.ts', 'public/ts')
                 '@routes': path.resolve('resources/app/routes'),
                 '@demo': path.resolve('resources/js'),
                 '@layouts': path.resolve('resources/app/layouts'),
+                '@middlewares': path.resolve('resources/app/middlewares'),
             },
             extensions: ['.ts', '.tsx', '.js', '.jsx'],
             fallback: {

@@ -65,7 +65,7 @@ export function AdminSidebar() {
 
     return (
         <Sidebar>
-            <SidebarContent className=" overflow-x-hidden">
+            <SidebarContent className=" overflow-x-hidden p-3">
                 <SidebarMenu>
                     {items.map((item, i) => (
                         <Collapsible key={i} defaultOpen className="group/collapsible">
@@ -96,12 +96,12 @@ export function AdminSidebar() {
                                 {item.children.map((child: { title: string, url: string }, i) =>
                                     <CollapsibleContent key={i} className="w-full">
                                         <SidebarMenuSub className="mr-0">
-                                            <SidebarMenuSubItem>
+                                            <SidebarMenuSubItem className="relative">
                                                 <SidebarMenuSubButton className="flex peer w-full justify-between" href={child.url}>
                                                     <span className="w-full">{child.title}</span>
                                                 </SidebarMenuSubButton>
 
-                                                <div className="absolute right-4 top-1.5 focus-within:opacity-100 active:opacity-100 opacity-0 hover:opacity-100 peer-hover:opacity-100 transition-opacity">
+                                                <div className="absolute right-2 top-0.5 focus-within:opacity-100 active:opacity-100 opacity-0 hover:opacity-100 peer-hover:opacity-100 transition-opacity">
                                                     <DropdownMenu>
                                                         <DropdownMenuTrigger asChild>
                                                             <button type="button" className="p-1 border rounded-lg bg-background hover:bg-primary/10 border-primary/10 ">
