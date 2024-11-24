@@ -24,6 +24,7 @@ mix.ts('resources/js/app.ts', 'public/ts')
                 '@components': path.resolve('resources/app/components'),
                 '@data': path.resolve('resources/app/data'),
                 '@hooks': path.resolve('resources/app/hooks'),
+                '@lib': path.resolve('resources/app/lib'),
                 '@pages': path.resolve('resources/app/pages'),
                 '@routes': path.resolve('resources/app/routes'),
                 '@demo': path.resolve('resources/js'),

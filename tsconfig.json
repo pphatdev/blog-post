@@ -8,15 +8,16 @@
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
-        "baseUrl": "./",
+        "baseUrl": ".",
         "paths": {
-            "@/*": ["resources/app/*"],
-            "@components/*": ["resources/app/components/*"],
-            "@data/*": ["resources/app/data/*"],
-            "@hooks/*": ["resources/app/hooks/*"],
-            "@pages/*": ["resources/app/pages/*"],
-            "@routes/*": ["resources/app/routes/*"],
-            "@demo/*": ["resources/js/*"]
+            "@/*": ["./resources/app/*"],
+            "@components/*": ["./resources/app/components/*"],
+            "@data/*": ["./resources/app/data/*"],
+            "@hooks/*": ["./resources/app/hooks/*"],
+            "@lib/*": ["./resources/app/lib/*"],
+            "@pages/*": ["./resources/app/pages/*"],
+            "@routes/*": ["./resources/app/routes/*"],
+            "@demo/*": ["./resources/js/*"]
         }
     },
     "include": [
