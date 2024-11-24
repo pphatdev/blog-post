@@ -4,14 +4,16 @@ import { AdminSidebar } from "@/layouts/admin-sidebar";
 import { BrowserRouter } from "react-router-dom";
 import { AdminHeader } from './admin-header';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children, className }: { children: React.ReactNode, className?: string }) {
     return (
         <BrowserRouter>
             <SidebarProvider>
                 <AdminSidebar />
                 <main className="w-full">
                     <AdminHeader/>
-                    {children}
+                    <div className="w-full max-w-3xl mx-auto h-full p-5">
+                        { children }
+                    </div>
                 </main>
             </SidebarProvider>
         </BrowserRouter>
