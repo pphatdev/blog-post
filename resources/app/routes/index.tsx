@@ -1,5 +1,6 @@
 import { AuthMiddleware } from '@/middlewares/auth';
 import NotFound from '@/pages/404';
+import Dashboard from '@/pages/dashboards/page';
 import HelloWorld from '@/pages/hello-world';
 import React from 'react';
 
@@ -18,9 +19,10 @@ const routes = [
             {
                 path: "",
                 element: (
-                    <AuthMiddleware>
-                        <HelloWorld/>
-                    </AuthMiddleware>
+                    <Dashboard></Dashboard>
+                    // <AuthMiddleware>
+                    //     <HelloWorld/>
+                    // </AuthMiddleware>
                 ),
             }
         ]
