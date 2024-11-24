@@ -36,6 +36,20 @@ php artisan serve
 ```bash
 npm run watch
 ```
+
+## With Quickly Start
+
+### Clone Project
+To clone project from GitHub:
+```bash
+git clone https://github.com/pphatdev/blog-post.git && cd blog-post
+```
+
+### Setup Project Environment
+```bash
+composer install && npm install && cp .env.example .env && php artisan key:generate && npm run dev && php artisan serve
+```
+
 ## Usage
 - Visit `http://localhost:8000` in your browser to access the application.
 
