@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\V1\PostContentsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group([
+    'prefix' => env('APP_VERSION', 'v1')
+], function () {
+
+    // Posts
+    Route::group(['prefix' => 'posts' ], function () {
+        Route::post('/store', [PostContentsController::class, 'store']);
+        Route::get('/{id?}', [PostContentsController::class, 'all']);
+        Route::put('/{id?}', [PostContentsController::class, 'update']);
+        Route::delete('/{id?}', [PostContentsController::class, 'delete']);
+        Route::patch('/{id?}', [PostContentsController::class, 'restore']);
+    });
 });
