@@ -14,7 +14,10 @@ yarn-error.log
 /.idea
 /.vscode
 
+# Ignore lock
+package-lock.json
 
+# Ignore compiled files
 /public/mix-manifest.json
 /public/js/
 /public/ts/
