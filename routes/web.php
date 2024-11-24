@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\View;
 |
 */
 
-
 Route::pattern('page', '[a-zA-Z0-9-/]+');
 Route::get('{page?}', function($page = "")
 {
@@ -26,8 +25,7 @@ Route::get('{page?}', function($page = "")
 
             return "return fetchData endpoint";
         else:
-            // return view('index', compact('page'));
-            return "return normal page";
+            return view('index', compact('page'));
         endif;
 
     else:
