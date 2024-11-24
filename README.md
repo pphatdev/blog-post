@@ -47,7 +47,7 @@ git clone https://github.com/pphatdev/blog-post.git && cd blog-post
 
 ### Setup Project Environment
 ```bash
-composer install && npm install && cp .env.example .env && php artisan key:generate && npm run dev && php artisan serve
+composer install && npm install && cp .env.example .env && php artisan key:generate && php artisan migrate && npm run dev && php artisan serve
 ```
 
 ## Usage
