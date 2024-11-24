@@ -1,9 +1,10 @@
+import HelloWorld from '@/pages/hello-world';
 import React from 'react';
 
 const routes = [
     {
         path: "/",
-        element: <div>Hello world!</div>,
+        element: <HelloWorld/>,
     },
 ];
 
