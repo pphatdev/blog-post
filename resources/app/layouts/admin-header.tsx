@@ -7,7 +7,7 @@ import { AdminHeaderProfile } from '@/components/admin-header-profile';
 
 export const AdminHeader = () => {
     return (
-        <header className='bg-background w-full border-b'>
+        <header className='sticky top-0 z-[9999] bg-background/50 backdrop-blur-xl w-full border-b'>
             <div className="z-50 flex items-center justify-between px-2 mx-auto max-w-8xl">
                 <div className="flex items-center justify-between w-64 gap-4 px-1 py-2">
                     <SidebarTrigger />
