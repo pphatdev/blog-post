@@ -5,6 +5,7 @@ import {
     AudioWaveform,
     BookOpen,
     Bot,
+    Boxes,
     ChartPieIcon,
     Command,
     ContactRound,
@@ -15,6 +16,7 @@ import {
     PieChart,
     RssIcon,
     Settings2,
+    Sparkles,
     SquareKanban,
     SquareTerminal,
     TargetIcon,
@@ -134,6 +136,38 @@ const data = {
             title: "Messages",
             url: "#",
             icon: Inbox,
+            isActive: false,
+            items: [
+                {
+                    title: "Hired",
+                    url: "#",
+                },
+                {
+                    title: "Discussions",
+                    url: "#",
+                }
+            ],
+        },
+        {
+            title: "Products",
+            url: "#",
+            icon: Boxes,
+            isActive: false,
+            items: [
+                {
+                    title: "Designed",
+                    url: "#",
+                },
+                {
+                    title: "Packaged",
+                    url: "#",
+                }
+            ],
+        },
+        {
+            title: "The Magic",
+            url: "#",
+            icon: Sparkles,
             isActive: false,
             items: [
                 {
